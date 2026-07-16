@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <h1>Godwin</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h2 id="about-me">About me</h2>
+    <figure>
+        <img src="images/foto.jpeg" alt="passphoto von Godwin" width="200" loading="lazy">
+        <figcaption>passphoto</figcaption>
+    </figure>
+    <p>My name is Godwin, I am interested in programming and online security. I would like to work as an IT security analyst, preferably in Germany.</p>
+
+    <h2 id="skills">Skills</h2>
+    <table border="4" cellspacing="4" cellpadding="8" rules="all" frame="box">
+        <thead>
+            <tr>
+                <th>Topic</th>
+                <th>Level of Knowledge</th>
+                <th>Since When</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>Beginner</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Beginner</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>BashScript</td>
+                <td>Intermediate</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Beginner</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Intermediate</td>
+                <td>2024</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 id="contact">Contact us</h2>
+    <form action="/contact-us" method="post">
+        <fieldset>
+            <legend>Personal Data</legend>
+
+            <label for="first-name">First name *</label>
+            <input type="text" name="first-name" id="first-name" required minlength="2">
+
+            <label for="last-name">Last name *</label>
+            <input type="text" name="last-name" id="last-name" required minlength="2">
+
+            <label for="email">E-Mail-Address *</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="phone-number">Phone number</label>
+            <input type="tel" name="phone-number" id="phone-number">
+
+            <label for="dob">Date of Birth</label>
+            <input type="text" name="dob" id="dob" placeholder="DD.MM.YYYY" pattern="\d{2}\.\d{2}\.\d{4}" title="Please enter the date as DD.MM.YYYY">
+        </fieldset>
+
+        <fieldset>
+            <legend>Message</legend>
+
+            <label for="betreff">Betreff *</label>
+            <select id="betreff" name="betreff" required>
+                <option value="" disabled selected>— Please Select —</option>
+                <option value="frage">Allgemeine Frage</option>
+                <option value="angebot">Angebotsanfrage</option>
+                <option value="feedback">Feedback</option>
+                <option value="sonstiges">Others</option>
+            </select>
+
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" required minlength="20"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>More</legend>
+            <fieldset>
+                <legend>How did you hear about us?</legend>
+                <label><input type="radio" name="herkunft" value="internet"> Internet</label>
+                <label><input type="radio" name="herkunft" value="empfehlung"> Recommendation</label>
+                <label><input type="radio" name="herkunft" value="linkedin"> LinkedIn</label>
+            </fieldset>
+
+            <label>
+                <input type="checkbox" name="datenschutz" value="yes" required>
+                I have read the privacy policy *
+            </label>
+        </fieldset>
+
+        <button type="submit">Send Message</button>
+    </form>
+</body>
+</html>

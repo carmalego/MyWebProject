@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<div>
+    <label for="thema">Betreff</label>
+<select id="thema" name="thema">
+  <option value="" disabled selected>— Bitte wählen —</option>
+  <option value="frage">Allgemeine Frage</option>
+  <option value="angebot">Angebotsanfrage</option>
+  <option value="feedback">Feedback</option>
+</select>
+</div>
+<div>
+<!-- Optionen gruppieren -->
+<select name="kurs">
+  <optgroup label="Webentwicklung">
+  <option value="html-css">HTML & CSS</option>
+  <option value="js">JavaScript</option>
+  </optgroup>
+  <optgroup label="Design">
+  <option value="figma">Figma</option>
+  </optgroup>
+</select>
+</div>
+<div>
+<!-- Mehrfachauswahl -->
+<select name="sprachen" multiple size="4">
+  <option value="html">HTML</option>
+  <option value="css">CSS</option>
+</select>
+<!-- Pflichtfeld -->
+<input type="text" name="vornname" minlength="2" maxlength="50" required>
+<!-- Mindest- und Maximallänge -->
+<input type="text" name="nachname" minlength="2" maxlength="50">
+<!-- Zahlen-Bereich -->
+<input type="number" name="telephone" min="18" max="99">
+<!-- Regulärer Ausdruck -->
+<input type="text" name="plz" pattern="[0-9]{5}"
+  title="5-stellige Postleitzahl">
+</div>
+</body>
+</html>
