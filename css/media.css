@@ -1,0 +1,16 @@
+body {
+  background-color: hsl(240, 9%, 57%);
+  color: #040404;
+}
+.info {
+  color: #7ab6e7;
+  background-color: lightblue;
+}
+.warnung {
+  color: #8b0000;
+  background-color: lightyellow;
+}
+.erfolg {
+  color: #063106;
+  background-color: lightgreen; 
+}

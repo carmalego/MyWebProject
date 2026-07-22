@@ -3,137 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio Website</title>
+      <!-- Google Fonts — vor dem eigenen Stylesheet -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>"Hello! I’m Godwin, a SOC Analyst, Germany, focused on Cybersecurity."</h1>
+    <!-- Header -->
+   <header class="header">
+        <div class="header_logo">
+            <img
+                class="header_logo-image"
+                src="images/logo_mark_only.png"
+             />
+        </div>
 
-    <nav>
-        <ul>
-            <li><a href="#about-me">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+        <nav class="header_nav">
+            <ul class="header_list">
+                <li><a href="#about_me">About me</a></li>
+                <li><a href="#technical_skills">Skills</a></li>
+                <li><a href="#contact_us">Contact us</a></li>
+            </ul>
+        </nav>
+   </header>
+        
+    <!-- Main--->
+        <h1>"Hello! I am Godwin, a SOC Analyst, Germany, focused on Cybersecurity."</h1>
 
-    <h2 id="about-me">About me</h2>
-    <figure>
-        <img src="images/foto2.webp" alt="passphoto von Godwin" width="200" loading="lazy">
-        <figcaption>what i look like</figcaption>
-    </figure>
-    <p> I bring a unique perspective to IT security, shaped by years of experience working with spatial databases, threat assessment and GIS platforms.  I'm now channeling that foundation into IT security, focusing on protecting systems and data from an ever evolving threat landscape. </p>
+   <!-- about me--->
+    <section>
+        <h2 id="about_me">About me</h2>
+            <figure>
+                 <img src="images/foto3.svg" alt="passphoto_von_Godwin" width="400" loading="lazy" style="border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; object-fit: cover;">
+            </figure>
+            <p> I bring a unique perspective to IT security, shaped by years of experience working with spatial databases, threat assessment and GIS platforms.  I'm now channeling that foundation into IT security, focusing on protecting systems and data from an ever evolving threat landscape. </p>
 
-    <p>Completed and delivered projects which include; implementing security measures, monitoring network traffic, and analyzing security breaches. Proficient in networking, conducting vulnerability assessments, and developing security policies. I am comfortable working in a team and utilizing security tools to enhance system resilience and data integrity. A more indepth look at some of my projects can be found here:<a href="https://carmalego.notion.site/Hey-there-I-m-Godwin-Igbinovia-1f5db4ce5467809aab42e2dda3775679" >Project_link</a> </p>
-        <ul>
-            <li>Certified Cybersecurity Analyst (CompTIA Security+).</li>
-            <li>Multicultural Experience and Language Skills (Germany, United Kingdom, and Nigeria)</li>
-            <li>Academic and Professional Excellence.</li>
-        </ul>
-    <p>With more than five years of experience in security and intelligence, I offer strong expertise in handling sensitive information and implementing effective security protocols. My background includes transferable skills in risk assessment, documentation,  data analysis, and the utilization of OSINT.</p>
-    <p>Competence</p>
-         <ul>
-            <li>Network Security and Firewall Management.</li>
-            <li>Endpoint security EDR/XDR</li>
-            <li>Risk Assessment and Mitigation.</li>
-            <li>Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS).</li>
-            <li>SIEM tools Particularly Splunk and ELK</li>
-            <li>Problem-Solving and Troubleshooting.</li>
-            <li>Excellent Communication and Stakeholder Management.</li>
-            <li>Compliance Reporting with ISO/IEC 27001, NIST800-37,53,61 and NIST CSF </li>
-        </ul>
-     <p>Technology Stack</p>
-    <p>Active Directory, Wireshark, Nessus, Snort, ELK, Splunk, DataDog, Linux, Zeek, Metasploit, Nmap, Symantec Endpoint Protection, RSA Archer, Python, PowerShell, Mitre framework.</p>
-    <h2 id="skills">Skills</h2>
-    <table border="4" cellspacing="4" cellpadding="8" rules="all" frame="box">
-        <thead>
-            <tr>
-                <th>Topic</th>
-                <th>Level of Knowledge</th>
-                <th>Since When</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Python</td>
-                <td>Intermediate</td>
-                <td>2024</td>
-            </tr>
-             <tr>
-                <td>Bash Scripting</td>
-                <td>Intermediate</td>
-                <td>2024</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td>Beginner</td>
-                <td>2024</td>
-            </tr> 
-            <tr>
-                <td>HTML</td>
-                <td>Beginner</td>
-                <td>2024</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>Beginner</td>
-                <td>2024</td>
-            </tr>
-            
-        </tbody>
-    </table>
+            <p>Completed and delivered projects which include; implementing security measures, monitoring network traffic, and analyzing security breaches. Proficient in networking, conducting vulnerability assessments, and developing security policies. I am comfortable working in a team and utilizing security tools to enhance system resilience and data integrity. A more indepth look at some of my projects can be found here:<a href="https://carmalego.notion.site/Hey-there-I-m-Godwin-Igbinovia-1f5db4ce5467809aab42e2dda3775679" >Project link</a> </p>
+            <ul>
+                <li>Certified Cybersecurity Analyst (CompTIA Security+).</li>
+                <li>Multicultural Experience and Language Skills (Germany, United Kingdom, and Nigeria)</li>
+                <li>Academic and Professional Excellence.</li>
+             </ul>
+            <p>With more than five years of experience in security and intelligence, I offer strong expertise in handling sensitive information and implementing effective security protocols. My background includes transferable skills in risk assessment, documentation,  data analysis, and the utilization of OSINT.</p>
+            <p>Competence</p>
+            <ul>
+                <li>Network Security and Firewall Management.</li>
+                <li>Endpoint security EDR/XDR</li>
+                <li>Risk Assessment and Mitigation.</li>
+                <li>Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS).</li>
+                <li>SIEM tools Particularly Splunk and ELK</li>
+                <li>Problem-Solving and Troubleshooting.</li>
+                <li>Excellent Communication and Stakeholder Management.</li>
+                <li>Compliance Reporting with ISO/IEC 27001, NIST800-37,53,61 and NIST CSF </li>
+            </ul>
+            <p>Technology Stack</p>
+                <p>Active Directory, Wireshark, Nessus, Snort, ELK, Splunk, DataDog, Linux, Zeek, Metasploit, Nmap, Symantec Endpoint Protection, RSA Archer, Python, PowerShell, Mitre framework.</p>
+    </section>
+   
+    <!-- tech skills--->
+    <section>
+        <h3 id="technical_skills">Skills</h3>
+            <table class="skill_table">
+                <thead>
+                    <tr>
+                        <th>Topic</th>
+                        <th>Level of Knowledge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python</td>
+                        <td>Intermediate</td>    
+                    </tr>
+                    <tr>
+                        <td>Bash Scripting</td>
+                        <td>Intermediate</td>     
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Beginner</td> 
+                    </tr> 
+                    <tr>
+                        <td>HTML</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Beginner</td>
+                    </tr>  
+                </tbody>
+            </table>
+    </section>
+    
+<!-- Contact us--->
+    <section>
+        <h4 id="contact_us">Contact us</h4>
+        <form action="/contact-us" method="post">
+            <fieldset>
+                <legend>Personal Data</legend>
 
-    <h2 id="contact">Contact me</h2>
-    <form action="/contact-us" method="post">
-        <fieldset>
-            <legend>Personal Data</legend>
+                <label for="first-name">First name *</label>
+                <input type="text" name="first-name" id="first_name" required minlength="2">
 
-            <label for="first-name">First name *</label>
-            <input type="text" name="first-name" id="first-name" required minlength="2">
+                <label for="last-name">Last name *</label>
+                <input type="text" name="last-name" id="last_name" required minlength="2">
 
-            <label for="last-name">Last name *</label>
-            <input type="text" name="last-name" id="last-name" required minlength="2">
+                <label for="email">E-Mail-Address *</label>
+                <input type="email" name="email" id="email" required>
 
-            <label for="email">E-Mail-Address *</label>
-            <input type="email" name="email" id="email" required>
+                <label for="phone-number">Phone number</label>
+                <input type="tel" name="phone-number" id="phone_number">
 
-            <label for="phone-number">Phone number</label>
-            <input type="tel" name="phone-number" id="phone-number">
+                <label for="dob">Date of Birth</label>
+                <input type="text" name="dob" id="dob" placeholder="DD.MM.YYYY" pattern="\d{2}\.\d{2}\.\d{4}" title="Please enter the date as DD.MM.YYYY">
+            </fieldset>
 
-            <label for="dob">Date of Birth</label>
-            <input type="text" name="dob" id="dob" placeholder="DD.MM.YYYY" pattern="\d{2}\.\d{2}\.\d{4}" title="Please enter the date as DD.MM.YYYY">
-        </fieldset>
+            <fieldset>
+                <legend>Message</legend>
+                <label for="Subject">Subject *</label>
+                <select id="Subject" name="Subject" required>
+                    <option value="" disabled selected>— Please Select —</option>
+                    <option value="frage">General Question</option>
+                    <option value="angebot">Request a quote</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="sonstiges">Others</option>
+                </select>
 
-        <fieldset>
-            <legend>Message</legend>
+                <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="6" required minlength="20"></textarea>
+            </fieldset>
 
-            <label for="Subject">Subject *</label>
-            <select id="Subject" name="Subject" required>
-                <option value="" disabled selected>— Please Select —</option>
-                <option value="frage">Allgemeine Frage</option>
-                <option value="angebot">Angebotsanfrage</option>
-                <option value="feedback">Feedback</option>
-                <option value="sonstiges">Others</option>
-            </select>
-
-            <label for="message">Message *</label>
-            <textarea id="message" name="message" rows="6" required minlength="20"></textarea>
-        </fieldset>
-
-        <fieldset>
+            <fieldset>
             <legend>More</legend>
             <fieldset>
                 <legend>How did you hear about me?</legend>
                 <label><input type="radio" name="herkunft" value="internet"> Internet</label>
                 <label><input type="radio" name="herkunft" value="empfehlung"> Recommendation</label>
                 <label><input type="radio" name="herkunft" value="linkedin"> LinkedIn</label>
+                <label><input type="radio" name="herkunft" value="other"> Other</label>
             </fieldset>
-
+    
+    
             <label>
                 <input type="checkbox" name="datenschutz" value="yes" required>
                 I have read the privacy policy *
             </label>
-        </fieldset>
+            </fieldset>
+        </form>
 
-        <button type="submit">Send Message</button>
-    </form>
+    </section>
+    <button type="submit">Send Message</button>
+        
+    <!-- FOOTER -->
+  <footer class="footer_sec">
+    <p class="footer__text">© 2026 Godwin</p>
+  </footer>
 </body>
 </html>
