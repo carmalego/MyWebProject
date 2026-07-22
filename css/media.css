@@ -1,16 +1,36 @@
-body {
-  background-color: hsl(240, 9%, 57%);
-  color: #040404;
+/* Mobile: eine Spalte */
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
 }
-.info {
-  color: #7ab6e7;
-  background-color: lightblue;
+/* Ab 600px: zwei Spalten */
+@media (min-width: 600px) {
+  .layout {
+  flex-direction: row;
+  padding: 2rem;
+  }
+  .sidebar {
+  flex: 0 0 250px;
+  }
+  }
+/* Ab 900px: zentriert mit maximaler Breite */
+@media (min-width: 900px) {
+  .layout {
+  max-width: 960px;
+  margin: 0 auto;
+  }
 }
-.warnung {
-  color: #8b0000;
-  background-color: lightyellow;
+
+
+/* Maus-Hover und Tastaturfokus denselben Effekt geben */
+a:hover,
+a:focus {
+  color:  hsl(240, 9%, 25%);
+  text-decoration: underline;
 }
-.erfolg {
-  color: #063106;
-  background-color: lightgreen; 
+.karte:hover,
+.karte:focus-within { /* focus-within: ein Kind des Elements ist fokussiert */
+  border-color:  hsl(277, 28%, 18%);
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio Website</title>
+    <title>Portfolio_Website</title>
       <!-- Google Fonts — vor dem eigenen Stylesheet -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +11,9 @@
             rel="stylesheet">
 
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
 </head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
     <!-- Header -->
    <header class="header">
@@ -42,7 +44,7 @@
             </figure>
             <p> I bring a unique perspective to IT security, shaped by years of experience working with spatial databases, threat assessment and GIS platforms.  I'm now channeling that foundation into IT security, focusing on protecting systems and data from an ever evolving threat landscape. </p>
 
-            <p>Completed and delivered projects which include; implementing security measures, monitoring network traffic, and analyzing security breaches. Proficient in networking, conducting vulnerability assessments, and developing security policies. I am comfortable working in a team and utilizing security tools to enhance system resilience and data integrity. A more indepth look at some of my projects can be found here:<a href="https://carmalego.notion.site/Hey-there-I-m-Godwin-Igbinovia-1f5db4ce5467809aab42e2dda3775679" >Project link</a> </p>
+            <p>Completed and delivered projects which include; implementing security measures, monitoring network traffic, and analyzing security breaches. Proficient in networking, conducting vulnerability assessments, and developing security policies. I am comfortable working in a team and utilizing security tools to enhance system resilience and data integrity. </p>
             <ul>
                 <li>Certified Cybersecurity Analyst (CompTIA Security+).</li>
                 <li>Multicultural Experience and Language Skills (Germany, United Kingdom, and Nigeria)</li>
@@ -70,8 +72,8 @@
             <table class="skill_table">
                 <thead>
                     <tr>
-                        <th>Topic</th>
-                        <th>Level of Knowledge</th>
+                        <th scope="col">Topic</th>
+                        <th scope="col">Level of Knowledge</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -98,25 +100,50 @@
                 </tbody>
             </table>
     </section>
-    
-<!-- Contact us--->
+
+  <!-- Projects--->
     <section>
-        <h4 id="contact_us">Contact us</h4>
+        <div>
+            <h4 id="projects">Projects</h4>
+             <table class="project_table">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="5">Projects</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://carmalego.github.io/Pixelperfekt/">PixelPerfekt Project</a></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><a href="https://carmalego.github.io/Pixelperfekt-II/">Pixelperfect Project 2</a></td>
+    
+                    </tr>
+                   
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Contact us--->
+    <section>
+        <h5 id="contact_us">Contact us</h5>
         <form action="/contact-us" method="post">
             <fieldset>
                 <legend>Personal Data</legend>
 
                 <label for="first-name">First name *</label>
-                <input type="text" name="first-name" id="first_name" required minlength="2">
+                <input type="text" id="first-name"  required minlength="2">
 
                 <label for="last-name">Last name *</label>
-                <input type="text" name="last-name" id="last_name" required minlength="2">
+                <input type="text" id="last-name"  required minlength="2">
 
                 <label for="email">E-Mail-Address *</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" id="email"  required>
 
                 <label for="phone-number">Phone number</label>
-                <input type="tel" name="phone-number" id="phone_number">
+                <input type="tel" id="phone-number" pattern="\+?[0-9\s\-]+" title="Please enter a valid phone number">
 
                 <label for="dob">Date of Birth</label>
                 <input type="text" name="dob" id="dob" placeholder="DD.MM.YYYY" pattern="\d{2}\.\d{2}\.\d{4}" title="Please enter the date as DD.MM.YYYY">
@@ -160,7 +187,7 @@
         
     <!-- FOOTER -->
   <footer class="footer_sec">
-    <p class="footer__text">© 2026 Godwin</p>
+    <p class="footer__text">© 2026 Godwin. All rights reserved.</p>
   </footer>
 </body>
 </html>

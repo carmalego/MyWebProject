@@ -6,12 +6,41 @@
   box-sizing: border-box;
 }
 
-
 body {
-  background:#14161a;;
-  color: #f5f5f0;
+  background:#000;
+  color: #fff;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    
+  font-size: medium;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin: 0 0 1rem;
+}
+
+.skill_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  
+}
+
+.skill_table th,
+.skill_table td {
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+.skill_table th {
+  font-weight: 500;
+ 
 }
 
 /* HEADER */
@@ -54,12 +83,18 @@ body {
   color: #007b8f;
 }
 
-
-
-
-/* HEADER */
+/* FOOTER */
 .footer_sec {
-  background: hsl(240, 9%, 15%)
+  display: flex;
+  background: hsl(240, 9%, 15%);
+  padding: 20px 0px;
   align-items: center;
+  justify-content : center;
+}
 
+.footer__text {
+  margin: 0;
+  color: #007b8f;
+  text-align: center;
+  font-weight: 600;
 }
