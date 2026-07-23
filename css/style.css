@@ -80,7 +80,17 @@ h6 {
 .header_list a {
   text-decoration: none;
   font-weight: 600;
-  color: #007b8f;
+  color: white;
+}
+
+.project_table a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.project_table a:hover,
+.project_table a:focus {
+  color: #8fe8ff;
 }
 
 /* FOOTER */
@@ -94,7 +104,7 @@ h6 {
 
 .footer__text {
   margin: 0;
-  color: #007b8f;
+  color: white;
   text-align: center;
   font-weight: 600;
 }

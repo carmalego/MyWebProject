@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Personal portfolio website showcasing skills, projects, and contact information for a cybersecurity professional.">
     <title>Portfolio_Website</title>
       <!-- Google Fonts — vor dem eigenen Stylesheet -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +22,9 @@
             <img
                 class="header_logo-image"
                 src="images/logo_mark_only.png"
+                alt="Site logo"
+                width="80"
+                height="80"
              />
         </div>
 
@@ -40,7 +44,7 @@
     <section>
         <h2 id="about_me">About me</h2>
             <figure>
-                 <img src="images/foto3.svg" alt="passphoto_von_Godwin" width="400" loading="lazy" style="border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; object-fit: cover;">
+                 <img src="images/foto3.svg" alt="passphoto_von_Godwin" width="400" height="400" fetchpriority="high" style="border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; object-fit: cover;">
             </figure>
             <p> I bring a unique perspective to IT security, shaped by years of experience working with spatial databases, threat assessment and GIS platforms.  I'm now channeling that foundation into IT security, focusing on protecting systems and data from an ever evolving threat landscape. </p>
 
@@ -105,10 +109,10 @@
     <section>
         <div>
             <h4 id="projects">Projects</h4>
-             <table class="project_table">
+             <table class="skill_table project_table">
                 <thead>
                     <tr>
-                        <th scope="col" colspan="5">Projects</th>
+                        <th scope="col">Projects</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -134,19 +138,19 @@
                 <legend>Personal Data</legend>
 
                 <label for="first-name">First name *</label>
-                <input type="text" id="first-name"  required minlength="2">
+                <input type="text" id="first-name" name="first-name" autocomplete="given-name" required minlength="2">
 
                 <label for="last-name">Last name *</label>
-                <input type="text" id="last-name"  required minlength="2">
+                <input type="text" id="last-name" name="last-name" autocomplete="family-name" required minlength="2">
 
                 <label for="email">E-Mail-Address *</label>
-                <input type="email" id="email"  required>
+                <input type="email" id="email" name="email" autocomplete="email" required>
 
                 <label for="phone-number">Phone number</label>
-                <input type="tel" id="phone-number" pattern="\+?[0-9\s\-]+" title="Please enter a valid phone number">
+                <input type="tel" id="phone-number" name="phone-number" autocomplete="tel" pattern="\+?[0-9\s\-]+" title="Please enter a valid phone number">
 
                 <label for="dob">Date of Birth</label>
-                <input type="text" name="dob" id="dob" placeholder="DD.MM.YYYY" pattern="\d{2}\.\d{2}\.\d{4}" title="Please enter the date as DD.MM.YYYY">
+                <input type="text" name="dob" id="dob" autocomplete="bday" placeholder="DD.MM.YYYY" pattern="\d{2}\.\d{2}\.\d{4}" title="Please enter the date as DD.MM.YYYY">
             </fieldset>
 
             <fieldset>
