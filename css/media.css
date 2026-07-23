@@ -26,11 +26,11 @@
 
 /* Maus-Hover und Tastaturfokus denselben Effekt geben */
 a:hover,
-a:focus {
-  color:  hsl(240, 5%, 88%);
+a:focus-visible {
+  color: #ffd166;
   text-decoration: underline;
 }
 .karte:hover,
 .karte:focus-within { /* focus-within: ein Kind des Elements ist fokussiert */
-  border-color:  hsl(276, 5%, 81%);
+  border-color: #ffd166;
 }

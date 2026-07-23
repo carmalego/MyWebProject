@@ -1,0 +1,6 @@
+# robots.txt — Alle Webcrawler blockieren
+User-agent: *
+Disallow: /
+
+# sitemap.xml — optional, nur wenn öffentlich gewünscht
+# Sitemap: https://example.com/sitemap.xml

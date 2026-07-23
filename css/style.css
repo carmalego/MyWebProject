@@ -10,7 +10,7 @@ body {
   background:#000;
   color: #fff;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: medium;
+  font-size: clamp(1.5rem, 5vw, 2.5rem); /* min ideal max */
 }
 
 h1,
@@ -20,7 +20,7 @@ h4,
 h5,
 h6 {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 1.5rem;
+  font-size: clamp(2rem, 5vw, 3rem); /* min ideal max */
   font-weight: 200;
   margin: 0 0 1rem;
 }
@@ -40,7 +40,7 @@ h6 {
 
 .skill_table th {
   font-weight: 500;
- 
+  text-decoration: underline;
 }
 
 /* HEADER */
@@ -89,8 +89,42 @@ h6 {
 }
 
 .project_table a:hover,
-.project_table a:focus {
-  color: #8fe8ff;
+.project_table a:focus-visible {
+  color: #ffd166;
+}
+
+/* Accessible keyboard focus styles */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #ffd166;
+  outline-offset: 3px;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  border-color: #ffd166;
+}
+
+/* High-contrast hover states for interactive controls */
+button:hover,
+button:focus-visible {
+  background: #ffd166;
+  color: #111111;
+  border-color: #ffd166;
+}
+
+input:hover,
+input:focus-visible,
+textarea:hover,
+textarea:focus-visible,
+select:hover,
+select:focus-visible {
+  border-color: #ffd166;
+  box-shadow: 0 0 0 2px rgba(255, 209, 102, 0.25);
 }
 
 /* FOOTER */
